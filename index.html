@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Surfing Survey</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+        <h1 id="title">Surfing Survey</h1>
+        <p id="description">Thank you for taking the time to know your surfing preferences</p>
+        </header>
+        <form id="survey-form">
+            <p>Tell us about you...</p>
+            <div class="form-section">
+              <label id="name-label" class="section-title" for="name">
+                Name
+              </label>
+              <input id="name" class="form-input" type="text" placeholder="Enter your name" required="text">
+            </div>      
+            <div class="form-section">
+              <label id="email-label" class="section-title" for="email">
+                Email
+              </label>
+              <input id="email" class="form-input" type="email" placeholder="Enter your email" required="email">
+            </div>      
+            <div class="form-section">
+              <label class="section-title" id="number-label" for="number">
+                Age
+              </label>
+              <input id="number" class="form-input" type="number" placeholder="Enter your Age" required="age" min="10" max="109">
+            </div>     
+            <div class="form-section">
+              <p>Which option best describes your current Surfing level?</p>
+              <select id="dropdown">
+                <option disabled="" selected="" value="">Select current level</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Self Advanced</option>
+                <option value="pro">Professional</option>
+              </select>
+            </div>
+            <div class="form-section">
+              <p>Would you recommend start surfing to a friend?</p>
+                <label>
+                  <input class="input-radio" name="user-recomend" value="definitily" type="radio" checked="">
+                  Definitily
+                </label>
+                <label>
+                  <input class="input-radio" name="user-recomend" value="for-sure" type="radio">
+                  For sure
+                </label>
+                <label>
+                  <input class="input-radio" name="user-recomend" value="no-doubt" type="radio">
+                  No doubt
+                </label>
+            </div>
+            <div class="form-section">
+                <p>
+                  Which type of surfboard would you like to have in your quiver?
+                  <span class="clue">(Check all types that apply)</span>
+                </p>
+      
+                <label><input name="prefer" value="shortboard" type="checkbox" class="input-checkbox">Shortboard</label>
+                <label><input name="prefer" value="longboard" type="checkbox" class="input-checkbox">Longboard</label>
+                <label><input name="prefer" value="fish" type="checkbox" class="input-checkbox">Fish</label>
+                <label><input name="prefer" value="malibu-funboard" type="checkbox" class="input-checkbox">Malibu/Funboard</label>
+                <label><input name="prefer" value="gun" type="checkbox" class="input-checkbox">Gun</label>
+                <label><input name="prefer" value="mini-gun" type="checkbox" class="input-checkbox">Mini-Gun</label>
+                <label><input name="prefer" value="sup" type="checkbox" class="input-checkbox">Stand-Up Paddleboard (SUP)</label>
+                <label><input name="prefer" value="tow-in" type="checkbox" class="input-checkbox">Tow-In Board</label>
+              </div>
+            <div class="form-section">
+              <p>Please tell us what do you like about Surfing</p>
+              <textarea name="comment" id="comments" class="input-textarea" cols="30" rows="10" placeholder="Tell us here"></textarea>
+            </div>
+            <div class="form-section">
+                <button type="submit" id="submit" class="submit-button">
+                  Submit
+                </button>
+              </div>
+          </form>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+    background-image: url(https://i.pinimg.com/736x/ff/85/2d/ff852d556e77048c613f2aec5f17128b--surfers-mag-surfer-magazine.jpg);
+    font-family: Courier, sans-serif;
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.header {
+    text-align: center;    
+}
+#title {
+    color: orange;
+}
+#description {
+    font-size: 1rem;
+    color: white;
+}
+p{
+    font-weight: bold;
+}
+#survey-form {
+    width: 85%;
+    background-color: rgb(120, 223, 160);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 600px;
+    opacity: 0.7;
+  }
+label {
+    display: flex;
+    align-items: center;
+}
+.input-checkbox, input-radio {
+    display: block;
+}
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  /*padding: 0.625rem;*/
+  resize: vertical;
+}
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: greenyellow;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: Courier, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
